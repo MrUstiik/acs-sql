@@ -1,11 +1,11 @@
 version: '2'
 services:
-  actioncatalogservicesql-postgresql:
+  actioncatalogservice-postgresql:
     image: postgres:12.3
     # volumes:
-    #     - ~/volumes/jhipster/ActionCatalogServiceSQL/postgresql/:/var/lib/postgresql/data/
+    #     - ~/volumes/jhipster/ActionCatalogService/postgresql/:/var/lib/postgresql/data/
     environment:
-      - POSTGRES_USER=ActionCatalogServiceSQL
+      - POSTGRES_USER=ActionCatalogService
       - POSTGRES_PASSWORD=
       - POSTGRES_HOST_AUTH_METHOD=trust
     ports:

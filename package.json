@@ -1,7 +1,7 @@
 {
-  "name": "action-catalog-service-sql",
+  "name": "action-catalog-service",
   "version": "0.0.0",
-  "description": "Description for ActionCatalogServiceSQL",
+  "description": "Description for ActionCatalogService",
   "private": true,
   "license": "UNLICENSED",
   "cacheDirectories": [

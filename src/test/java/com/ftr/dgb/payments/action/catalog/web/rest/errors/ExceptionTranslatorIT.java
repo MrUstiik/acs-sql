@@ -6,7 +6,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-import com.ftr.dgb.payments.action.catalog.ActionCatalogServiceSqlApp;
+import com.ftr.dgb.payments.action.catalog.ActionCatalogServiceApp;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -20,7 +20,7 @@ import org.springframework.test.web.servlet.MockMvc;
  */
 @WithMockUser
 @AutoConfigureMockMvc
-@SpringBootTest(classes = ActionCatalogServiceSqlApp.class)
+@SpringBootTest(classes = ActionCatalogServiceApp.class)
 public class ExceptionTranslatorIT {
     @Autowired
     private MockMvc mockMvc;
