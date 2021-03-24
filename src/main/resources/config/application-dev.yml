@@ -35,20 +35,10 @@ spring:
   jackson:
     serialization:
       indent-output: true
-  datasource:
-    type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:postgresql://localhost:5432/ActionCatalogServiceSQL
-    username: ActionCatalogServiceSQL
-    password:
-    hikari:
-      poolName: Hikari
-      auto-commit: false
-  jpa:
-    database-platform: io.github.jhipster.domain.util.FixedPostgreSQL10Dialect
-    show-sql: true
   liquibase:
     # Remove 'faker' if you do not want the sample data to be loaded automatically
     contexts: dev, faker
+    url: jdbc:postgresql://localhost:5432/ActionCatalogServiceSQL
   mail:
     host: localhost
     port: 25
@@ -56,6 +46,10 @@ spring:
     password:
   messages:
     cache-duration: PT1S # 1 second, see the ISO 8601 standard
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/ActionCatalogServiceSQL
+    username: ActionCatalogServiceSQL
+    password:
   thymeleaf:
     cache: false
   sleuth:
