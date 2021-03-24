@@ -37,8 +37,8 @@ spring:
       indent-output: true
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:postgresql://localhost:5432/ActionCatalogServiceSQL
-    username: ActionCatalogServiceSQL
+    url: jdbc:postgresql://localhost:5432/ActionCatalogService
+    username: ActionCatalogService
     password:
     hikari:
       poolName: Hikari

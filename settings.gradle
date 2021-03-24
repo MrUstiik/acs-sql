@@ -13,4 +13,4 @@ pluginManagement {
      }
 }
 
-rootProject.name = "action-catalog-service-sql"
+rootProject.name = "action-catalog-service"

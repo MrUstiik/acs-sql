@@ -3,7 +3,7 @@ package com.ftr.dgb.payments.action.catalog.config.timezone;
 import static java.lang.String.format;
 import static org.assertj.core.api.Assertions.assertThat;
 
-import com.ftr.dgb.payments.action.catalog.ActionCatalogServiceSqlApp;
+import com.ftr.dgb.payments.action.catalog.ActionCatalogServiceApp;
 import com.ftr.dgb.payments.action.catalog.repository.timezone.DateTimeWrapper;
 import com.ftr.dgb.payments.action.catalog.repository.timezone.DateTimeWrapperRepository;
 import java.time.*;
@@ -20,7 +20,7 @@ import org.springframework.transaction.annotation.Transactional;
 /**
  * Integration tests for the ZoneId Hibernate configuration.
  */
-@SpringBootTest(classes = ActionCatalogServiceSqlApp.class)
+@SpringBootTest(classes = ActionCatalogServiceApp.class)
 public class HibernateTimeZoneIT {
     @Autowired
     private DateTimeWrapperRepository dateTimeWrapperRepository;
